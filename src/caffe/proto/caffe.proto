@@ -368,6 +368,8 @@ message SolverParameter {
   }
   // DEPRECATED: use type instead of solver_type
   optional SolverType solver_type = 30 [default = SGD];
+  optional float start_lr_policy = 45;
+  optional float max_lr = 46; // The maximum learning rate for CLR policies
 }
 
 // A message that stores the solver snapshots
